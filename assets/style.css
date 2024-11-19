@@ -1,0 +1,199 @@
+/* Fonts */
+@import url(../css/clash-display.css);
+
+/*Varibles*/
+:root {
+    --c-green: #09ff00;
+    --c-white: #ffffff;
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-light: #006090;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+
+}
+
+/* Reset & Helpers */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--c-body);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-white);
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+.section-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow);
+}
+
+/* NAVBAR */
+.navbar{
+    box-shadow: var(--box-shadow);
+    background-color: var(--c-dark);
+}
+
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-body);
+}
+
+.nav-item a:hover{
+    color: var(--c-white);
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--c-white);
+}
+
+/* Profile */
+
+
+.profile img{
+    border-radius: 10px;
+    width: 60%;
+}
+
+.profile button a{
+    text-decoration: none;
+    color: var(--c-body);
+    transition: var(--transition);
+}
+
+.profile button a:hover{
+    color: var(--c-white);
+}
+
+/* About */
+
+.section-title{
+    margin-bottom: 60px;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-body);
+    margin: 16px auto 24px auto;
+}
+
+/* Specialized */
+
+.card{
+    padding: 10px;
+    box-shadow: rgb(50, 50, 55) 10px 7px 29px 0px;
+}
+
+.card img{
+    border-radius: 15px;
+}
+
+.card h1,p{
+    color: var(--c-white);
+}
+
+.card button a{
+    text-decoration: none;
+    color: var(--c-dark);
+    transition: var(--transition);
+}
+
+.card button:hover{
+    background-color: var(--c-dark);
+}
+
+.card button a:hover{
+    color: var(--c-white);
+}
+
+
+/* FOOTER */
+footer{
+    padding-top: 120px;
+}
+
+.footer-top{
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-bottom a{
+    color: var(--c-brand);
+}
+
+.footer-bottom a:hover{
+    color: var(--c-light);
+}
+
+footer img{
+    padding-bottom: 20px;
+}
+
+footer li,
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer .line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 22px;
+
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover{
+    background-color: var(--c-brand);
+    color: white;
+}
+
